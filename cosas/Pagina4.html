@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 4</title>
+</head>
+<body>
+    <h1>Pagina 4</h1>
+    <a href="../index.html">Volver a la pagina principal</a><br><!--ir a paginas que estan en la carpeta de atras-->
+    <a href="../pagina2.html">Ir a pagina 2</a><br>
+    <a href="../pagina3.html">Ir a pagina 3</a><br><br><br>
+    <form action="">
+        <label for="">Nombre</label><!--sirve para poner una label.-->
+            <input type="text"><br><br><!--Sirve para poner una caja de texto.-->
+        <!--Otra forma de hacer el la caja de texto-->
+        <label for"apellido">Apellido<!--Aqui estamos usando dentro de la etiqueta label un input-->
+            <input id="apellido" maxlength="5" placeholder="Apellido" type="text"><!--podremos colocar un (placeholder) para añadir dentro de la caja de texto un mensaje y un (maxlenght) para añadir un limite de caracteres a usar-->
+        </label><br><br>
+        <label for="numero">Numero
+            <input id="numero" value="3005649843" disabled readonly type="text"><!--Podemos definir (readonly) para que la etiqueta no se pueda escribir y (value) para que se defina un valor predeterminado y (disabled) que sirve para desabilitar el campo-->
+        </label><br><br>
+        <label for"edad">Edad
+            <input id="edad" type="range" min="0" max="125"><!--sirve para asignar una barra deslizadora-->
+        </label><br><br>
+        <label for="tiempo">Tiempo viviendo en medellin
+            <input id="tiempo" value="1" type="number"> años.<br><!--Tenemos el input tipo numero que sirve para asignar un numero determinado-->
+            Introduce tu contraseña <input type="password"><br><br><!--sirve para hacer un campo como si capturara la contraseña-->
+            Introduce tu fecha de nacimiento. <input type="date"><br><br>
+            Introduce tu email. <input type="email" name="@outlook.com" id="email"><br><br>
+            Sube tu archivo. <input type="file" name="" id="" multiple><!--(multiple) ayuda a seleccionar varios archivos-->
+
+        </label>
+    </form>    
+</body>
+</html>
