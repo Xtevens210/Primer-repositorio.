@@ -11,10 +11,12 @@
     <a href="../index.html">Volver a la pagina principal</a><br><!--ir a paginas que estan en la carpeta de atras-->
     <a href="../pagina2.html">Ir a pagina 2</a><br>
     <a href="../pagina3.html">Ir a pagina 3</a><br><br><br>
-    <form action="">
+    <form action=""><!--Iniciar un formulario-->
+        <input type="reset" value="Formatear formulario"><br><br><!--Se usa para resetear un formulario-->
+        <input type="hidden"><!--Se pone para que se introduzca infromacion oculta-->
         <label for="">Nombre</label><!--sirve para poner una label.-->
             <input type="text"><br><br><!--Sirve para poner una caja de texto.-->
-        <!--Otra forma de hacer el la caja de texto-->
+        <!--Otra forma de hacer la caja de texto-->
         <label for"apellido">Apellido<!--Aqui estamos usando dentro de la etiqueta label un input-->
             <input id="apellido" maxlength="5" placeholder="Apellido" type="text"><!--podremos colocar un (placeholder) para añadir dentro de la caja de texto un mensaje y un (maxlenght) para añadir un limite de caracteres a usar-->
         </label><br><br>
@@ -24,14 +26,59 @@
         <label for"edad">Edad
             <input id="edad" type="range" min="0" max="125"><!--sirve para asignar una barra deslizadora-->
         </label><br><br>
-        <label for="tiempo">Tiempo viviendo en medellin
-            <input id="tiempo" value="1" type="number"> años.<br><!--Tenemos el input tipo numero que sirve para asignar un numero determinado-->
-            Introduce tu contraseña <input type="password"><br><br><!--sirve para hacer un campo como si capturara la contraseña-->
-            Introduce tu fecha de nacimiento. <input type="date"><br><br>
-            Introduce tu email. <input type="email" name="@outlook.com" id="email"><br><br>
-            Sube tu archivo. <input type="file" name="" id="" multiple><!--(multiple) ayuda a seleccionar varios archivos-->
-
+        <fieldset><!--sirve para encerrar el formulario en un recuadro.-->
+            <legend><b>Formulario</b></legend><!--Sirve para poner un mensaje en el recuadro que hicimos-->
+            <label for="tiempo">Tiempo viviendo en medellin
+                <input id="tiempo" value="1" type="number"> años.<br><!--Tenemos el input tipo numero que sirve para asignar un numero determinado-->
+                Introduce tu contraseña <input type="password"><br><br><!--sirve para hacer un campo como si capturara la contraseña-->
+                Introduce tu fecha de nacimiento. <input type="date"><br><br>
+                Introduce tu email. <input type="email" name="@outlook.com" id="email"><br><br>
+                Sube tu archivo. <input type="file" name="" id="" multiple><!--(multiple) ayuda a seleccionar varios archivos-->
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend><b>Formulario 2</b></legend>
+            <Label for"">Elige tu ciudad de residencia
+                <select><!--Aqui ponemos un desplegable con una opcion unica-->
+                    <option>Medellin</option>
+                    <option>Cali</option>
+                    <option>Bogota</option>
+                </select>
+            </Label><br><br>
+            <fieldset>
+                <label><!--Aqui hacemos un seleccionador de opciones-->
+                    Opcion 1 <input type="radio" name="opciones"/><br><!--Aqui añadimos name para hacerlo de un mismo grupo y solo se pueda seleccionar una opcion-->
+                    Opcion 2 <input type="radio" name="opciones" checked/><br><!--Usamos (checked) para dejar una opcion seleccionada de manera predeterminada-->
+                    Opcion 3 <input type="radio" name="opciones"/><br>
+                    Opcion 4 <input type="radio" name="opciones"/><br>
+                </label>
+            </fieldset><br>
+            <fieldset>
+                <label><!--Aqui hacemos un checkeo de cuadritos-->
+                    Opcion 1 <input type="checkbox" name="opciones"/><br>
+                    Opcion 2 <input type="checkbox" name="opciones" checked/><br>
+                    Opcion 3 <input type="checkbox" name="opciones"/><br>
+                    Opcion 4 <input type="checkbox" name="opciones"/><br>
+                </label>
+            </fieldset><br>
+            <label><h3>Comentarios y quejas</h3>
+                <textarea cols="70" rows="10">Escribe aqui tu comentario o queja...</textarea><!--Aqui colocamos un cajon de texto-->
+            </label>
+        </fieldset><br>
+        <input type="button" value="Boton"><br><br><!--Poner un boton-->
+        <input type="submit" value="Enviar"><!--Sirve para enviar automaticamente un formulario-->    
+    </form><br><br>
+    <fieldset>
+        <label for="">Elige una ciudad 
+            <input type="text" list="ciudades"><!--Construimos un desplegable que permite buscar una opcion-->
+            <datalist id="ciudades">
+                <option value="Medellin">Medellin</option><!--Se recomienda poner en el valor y entre etiquetas el mismo valor.-->
+                <option value="Monteria">Monteria</option>
+                <option value="Mompox">Mompox</option>
+                <option value="Armenia">Armenia</option>
+            </datalist>
         </label>
-    </form>    
+    </fieldset>
+    <br><br><br><br><br>
 </body>
 </html>
