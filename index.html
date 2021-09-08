@@ -2,30 +2,52 @@
     <!--En la parte de head pondremos todo lo que no se puede ver en la pagina.-->
 <head>
     <!--Aqui va el titulo de la pagina-->
-    <title>Hola Mundo</title>
+    <title>Hola Mundo</title><meta name="keywords" content="huevo, masa, comida, estado"><!--se usa para agregar etiquetas de buscado en el metadata y ceo de la pagina-->
+    <meta name="description" content="HTML es un lenguaje de programacion para estructurar paginas web"><!--se usa para agregar una descripcion de la pagina-->
+    <meta name="author" content="Steve"><!--sirve para proporcionar el author de la pagina-->
+    <meta name="copyright" content=""><!--sirve para especificar la dueña de la pagina-->
+    <meta name="robots" content="noindex"><!--sirve para indicar si la pagina es indexada o no-->
     <meta charset="utf-8">
+    <link rel="icon" href="imgs/logo del canal oficial.ico"><!--sirve para ñadir el icono de la pagina-->
 </head>
 <body> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="pagina2.html">Pagina2</a></li>
+                <li><a href="pagina3.html">Pagina3</a></li><!--construida una barra de navegacion-->
+                <li><a href="cosas/Pagina4.html">Pagina4</a></li>
+            </ul>
+        </nav>
+    </header><br><br>
     <!--aqui van los encabezados-->
-    <h1>Esto es un titulo.</h1><hr><!--Este titulo se suele poner una vez-->
-    <h2>Esto es un titulo h2</h2><br><!--Este titulo se suele poner varias veces pero sin exagerar-->
-    <h3>Titulo h3.</h3><!--Este titulo se suele poner veces ilimitadas como h4, h5, h6-->
-    <h4>Titulo h4.</h4>
-    <h5>Titulo h5.</h5>
-    <h6>Titulo h6.</h6>
-    <!--Aqui va un parrafo-->
-    <p>Aqui es donde se agrega un parrafo para entrar y copiar cualquier cosa...</p><hr><br>
-    <i>esta etiqueta se usa para ladear la letra</i><br><!--Se usa para ladear la letra en modo italica-->
-    <strike>Se usa para tachar las palabras frases ETC.</strike><br><!--Sirve para tachar lo que escribimos-->
-    <small>Se usa para usar la letra chiquita</small><br><!--Esta etiqueta se usa para poner la letra mas pequeña-->
-    <b>Se usa para hacer la letra en negrita</b><br><!--Esta se usa para poner la letra en negrita-->
-    <!--Aqui se agrega un audio.-->
-    <audio controls>
-        <!--Se usa para subir el mismo archivo en diferentes formatos para diferentes navegadores-->
-        <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732495/Multimedia/cinematic-chillhop-main-6676_u0nolw.wav">
-        <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732449/Multimedia/cinematic-chillhop-main-6676_xrecj0.mp3">
-        <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732448/Multimedia/cinematic-chillhop-main-6676_gamgpr.ogg">
-    </audio><br>
+    <article><!--se crea una etiqueta (article) para introducir un articulo-->
+        <section><!--si tenemos varios articulos colocamos la etiqueta(section)-->
+            <h1>Esto es un titulo.</h1><hr><!--Este titulo se suele poner una vez-->
+            <h2>Esto es un titulo h2</h2><br><!--Este titulo se suele poner varias veces pero sin exagerar-->
+            <h3>Titulo h3.</h3><!--Este titulo se suele poner veces ilimitadas como h4, h5, h6-->
+            <h4>Titulo h4.</h4>
+            <h5>Titulo h5.</h5>
+            <h6>Titulo h6.</h6>
+        </section>
+        <section><!--creamos una nueva seccion-->
+            <!--Aqui va un parrafo-->
+            <p>Aqui es donde se agrega un parrafo para entrar y copiar cualquier cosa...</p><hr><br>
+            <i>esta etiqueta se usa para ladear la letra</i><br><!--Se usa para ladear la letra en modo italica-->
+            <strike>Se usa para tachar las palabras frases ETC.</strike><br><!--Sirve para tachar lo que escribimos-->
+            <small>Se usa para usar la letra chiquita</small><br><!--Esta etiqueta se usa para poner la letra mas pequeña-->
+            <b>Se usa para hacer la letra en negrita</b><br><!--Esta se usa para poner la letra en negrita-->
+        </section>
+    </article>
+    <aside><!--sirve para colocar secciones a un costado-->
+        <!--Aqui se agrega un audio.-->
+        <audio controls>
+            <!--Se usa para subir el mismo archivo en diferentes formatos para diferentes navegadores-->
+            <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732495/Multimedia/cinematic-chillhop-main-6676_u0nolw.wav">
+            <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732449/Multimedia/cinematic-chillhop-main-6676_xrecj0.mp3">
+            <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732448/Multimedia/cinematic-chillhop-main-6676_gamgpr.ogg">
+        </audio>
+    </aside><br>
     <a href="pagina2.html">Ir a otra pagina</a><br>
     <a href="pagina3.html">Ir a segunda pagina</a><br>
     <a href="cosas/Pagina4.html">Ir a pagina 4</a><br><!--Acceder a una pagina puesta dentro de una carpeta-->
@@ -37,5 +59,16 @@
         <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732453/Multimedia/Eye-79545_tevudy.webm">
         <source src="https://res.cloudinary.com/diqp92rza/video/upload/v1630732446/Multimedia/Eye-79545_qjqiew.mov">
     </video>
+    <footer>
+        <h4>
+            instagram : zzzzz
+        </h4>
+        <h3>
+            twiiter : iiii
+        </h3>
+        <h3>
+            copyright : 88888shiwuqdhiwjn
+        </h3>
+    </footer>
 </body>
 </html>
